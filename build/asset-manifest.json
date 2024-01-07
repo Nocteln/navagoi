@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.94f6da8e.css",
-    "main.js": "/static/js/main.c18ee672.js",
+    "main.css": "/static/css/main.7411319a.css",
+    "main.js": "/static/js/main.bb6eddcd.js",
+    "static/media/TenCommands.png": "/static/media/TenCommands.64b72991ab7c3187fe24.png",
+    "static/media/nauffIle.png": "/static/media/nauffIle.2810f083bbd5397bb443.png",
     "index.html": "/index.html",
-    "main.94f6da8e.css.map": "/static/css/main.94f6da8e.css.map",
-    "main.c18ee672.js.map": "/static/js/main.c18ee672.js.map"
+    "main.7411319a.css.map": "/static/css/main.7411319a.css.map",
+    "main.bb6eddcd.js.map": "/static/js/main.bb6eddcd.js.map"
   },
   "entrypoints": [
-    "static/css/main.94f6da8e.css",
-    "static/js/main.c18ee672.js"
+    "static/css/main.7411319a.css",
+    "static/js/main.bb6eddcd.js"
   ]
 }

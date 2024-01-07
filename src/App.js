@@ -1,5 +1,10 @@
 import "./App.css";
 import { useState } from "react";
+const NauffIle = require("./nauffIle.png");
+const Bucheron = require("./bucheron.Png");
+const Fermier = require("./fermier.png");
+const arbrePlantation = require("./arbrePlantation.png");
+const calandrier = require("./calandrier.png");
 
 function App() {
   const [page, setPage] = useState(1);
@@ -104,23 +109,26 @@ function Page2() {
       <h1>Système de Vie Communautaire</h1>
       <br />
       <br />
-      <h3>
-        Système de Rémunération: Troc, échange avec évaluation individuelle de
-        la valeur des biens.
-      </h3>
-      <br />
-      <h3>
-        Système de Vote: Démocratie participative avec des votes publics et
-        l'objectif d'une décision unanime.
-      </h3>
+      <div className="commu">
+        <h3>
+          Système de Rémunération: Troc, échange avec évaluation individuelle de
+          la valeur des biens.
+        </h3>
+        <br />
+        <img src={NauffIle} alt="" width="25%" />
+        <h3>
+          Système de Vote: Démocratie participative avec des votes publics et
+          l'objectif d'une décision unanime.
+        </h3>
+      </div>
     </div>
   );
 }
 
 function Page3() {
   return (
-    <div className="page">
-      <h1>⚖ Système Juridique et Règles de Vie ⚖</h1>
+    <div className="page rules">
+      <h1>⚖️ Système Juridique et Règles de Vie ⚖️</h1>
       <br />
       <br />
       <br />
@@ -146,10 +154,14 @@ function Page3() {
             habitants
           </h4>
         </div>
-        <h3>
-          Système Judiciaire: Travaux forcés pour les contrevenants, contribuant
-          au développement de la communauté.
-        </h3>
+        <div>
+          <h3>
+            Système Judiciaire: Travaux forcés pour les contrevenants,
+            contribuant au développement de la communauté.
+          </h3>
+          {/* <img src={TenCommands} alt="" /> */}
+          <span className="emojiBalance">⚖️</span>
+        </div>
       </div>
     </div>
   );
@@ -157,28 +169,48 @@ function Page3() {
 
 function Page4() {
   return (
-    <div className="page">
+    <div className="page ">
       <h1>Vie Quotidienne et Divertissement</h1>
-
-      <h3>
-        Système de Direction de la Population: Les compétents dirigent, partage
-        des connaissances en échange de rémunération future.
-      </h3>
-      <h3>
-        Répartition des Tâches: Liberté individuelle dans la vie quotidienne,
-        possibilité de créer des groupes/familles.
-      </h3>
-      <h3>
-        Gestion de l'Écosystème: Respect de la nature, replantation, élevages,
-        champs, etc.
-      </h3>
-      <h3>
-        Calendrier: Organisation du temps en fonction des saisons et des années.
-      </h3>
-      <h3>
-        Infrastructure de Divertissement: Terrains de jeu, loto équitable,
-        concours sportifs, événements festifs.
-      </h3>
+      <br />
+      <div className="categorySquare">
+        <div>
+          <h3 className="one">
+            Système de Direction de la Population: Les compétents dirigent,
+            partage des connaissances en échange de rémunération future.
+          </h3>
+          <br />
+          <img src={Bucheron} alt="" className="imgVie" />
+        </div>
+        <div>
+          <h3 className="two">
+            Répartition des Tâches: Liberté individuelle dans la vie
+            quotidienne, possibilité de créer des groupes/familles.
+          </h3>
+          <br />
+          <img src={Fermier} alt="" className="imgVie" />
+        </div>
+        <div>
+          <h3 className="three">
+            Gestion de l'Écosystème: Respect de la nature, replantation,
+            élevages, champs, etc.
+          </h3>
+          <br />
+          <img src={arbrePlantation} alt="" className="imgVie" />
+        </div>
+        <div>
+          <h3 className="four">
+            Calendrier: Organisation du temps en fonction des saisons et des
+            années.
+          </h3>
+          <br />
+          <img src={calandrier} alt="" className="imgVie" />
+        </div>
+        {/* <h3>
+          Infrastructure de Divertissement: Terrains de jeu, loto équitable,
+          concours sportifs, événements festifs.
+        </h3> */}
+        {/* </div> */}
+      </div>
     </div>
   );
 }
