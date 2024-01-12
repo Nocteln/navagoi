@@ -17,7 +17,7 @@ function App() {
       <h1 className="titre">oi navagoí</h1>
       <NavBar onChangePage={changePage} page={page} />
       <Contenu page={page} />
-      <Footer />
+      <Footer onChangePage={changePage} page={page} />
     </div>
   );
 }
@@ -53,10 +53,25 @@ function NavBar({ onChangePage, page }) {
   );
 }
 
-function Footer() {
+function Footer({ onChangePage, page }) {
   return (
     <div className="footer">
-      <h2>Made with ❤ by Théo, Amélie, Lucas & Eliott</h2>
+      <button
+        onClick={() => onChangePage(5)}
+        className={page === 5 ? "active" : ""}
+      >
+        Plan de l'ile
+      </button>
+      <h2>Par Théo, Amélie, Lucas & Eliott</h2>
+    </div>
+  );
+}
+
+function Page5() {
+  return (
+    <div className="page">
+      <h1>Plan de l'ile</h1>
+      <br />
     </div>
   );
 }
@@ -66,8 +81,9 @@ function Contenu({ page }) {
     <div className="content">
       {page === 1 && <Page1 />}
       {page === 2 && <Page2 />}
-      {page === 3 && <Page3 />}
       {page === 4 && <Page4 />}
+      {page === 3 && <Page3 />}
+      {page === 5 && <Page5 />}
     </div>
   );
 }
