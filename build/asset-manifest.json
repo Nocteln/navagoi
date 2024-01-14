@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.7411319a.css",
-    "main.js": "/static/js/main.bb6eddcd.js",
-    "static/media/TenCommands.png": "/static/media/TenCommands.64b72991ab7c3187fe24.png",
+    "main.css": "/static/css/main.1aecaa46.css",
+    "main.js": "/static/js/main.a78a3cab.js",
+    "static/media/map_2.jpg": "/static/media/map_2.4ab64f6043b8ec32db32.jpg",
     "static/media/nauffIle.png": "/static/media/nauffIle.2810f083bbd5397bb443.png",
+    "static/media/fermier.png": "/static/media/fermier.a9e70a3564b7b7258eb2.png",
+    "static/media/bucheron.Png": "/static/media/bucheron.77fbbd7cb1ecd3e8b573.Png",
+    "static/media/echanges.jpeg": "/static/media/echanges.0b133fa8c1efae0d7200.jpeg",
+    "static/media/calandrier.png": "/static/media/calandrier.d6e207d066bc1c5770bf.png",
+    "static/media/arbrePlantation.png": "/static/media/arbrePlantation.ce3bd23be0cb96cf0381.png",
     "index.html": "/index.html",
-    "main.7411319a.css.map": "/static/css/main.7411319a.css.map",
-    "main.bb6eddcd.js.map": "/static/js/main.bb6eddcd.js.map"
+    "main.1aecaa46.css.map": "/static/css/main.1aecaa46.css.map",
+    "main.a78a3cab.js.map": "/static/js/main.a78a3cab.js.map"
   },
   "entrypoints": [
-    "static/css/main.7411319a.css",
-    "static/js/main.bb6eddcd.js"
+    "static/css/main.1aecaa46.css",
+    "static/js/main.a78a3cab.js"
   ]
 }

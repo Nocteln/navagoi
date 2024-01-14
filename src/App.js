@@ -6,6 +6,8 @@ const Fermier = require("./fermier.png");
 const arbrePlantation = require("./arbrePlantation.png");
 const calandrier = require("./calandrier.png");
 const map = require("./map_2.jpg");
+const echanges = require("./echanges.jpeg");
+const vote = require("./vote.jpeg");
 
 function App() {
   const [page, setPage] = useState(1);
@@ -129,15 +131,21 @@ function Page2() {
       <br />
       <br />
       <div className="commu">
-        <h3>
-          Système de Rémunération: Troc, échange avec évaluation individuelle de
-          la valeur des biens.
-        </h3>
-        <br />
-        <h3>
-          Système de Vote: Démocratie participative avec des votes publics et
-          l'objectif d'une décision unanime.
-        </h3>
+        <div>
+          <h3>
+            Système de Rémunération: Troc, échange avec évaluation individuelle
+            de la valeur des biens.
+          </h3>
+          <img src={echanges} alt="" />
+        </div>
+        {/* <br /> */}
+        <div>
+          <h3>
+            Système de Vote: Démocratie participative avec des votes publics et
+            l'objectif d'une décision unanime.
+          </h3>
+          <img src={vote} alt="" />
+        </div>
       </div>
     </div>
   );
