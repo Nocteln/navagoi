@@ -5,6 +5,7 @@ const Bucheron = require("./bucheron.Png");
 const Fermier = require("./fermier.png");
 const arbrePlantation = require("./arbrePlantation.png");
 const calandrier = require("./calandrier.png");
+const map = require("./map_2.jpg");
 
 function App() {
   const [page, setPage] = useState(1);
@@ -70,8 +71,9 @@ function Footer({ onChangePage, page }) {
 function Page5() {
   return (
     <div className="page">
-      <h1>Plan de l'ile</h1>
+      <h1>🗺️Plan de l'ile🗺️</h1>
       <br />
+      <img src={map} alt="plan de l'ile" style={{ height: "60vh" }} />
     </div>
   );
 }
@@ -91,7 +93,7 @@ function Contenu({ page }) {
 function Page1() {
   return (
     <div className="page">
-      <h1>Structure Sociale et Gouvernance</h1>
+      <h1>🗡️Structure Sociale et Gouvernance🗡️</h1>
       <br />
       {/* <div className="categorySepare"> */}
       <div>
@@ -114,6 +116,7 @@ function Page1() {
         Hiérarchie: Représentants de la ville, experts dans chaque domaine,
         apprentissage des compétences.
       </h3>
+      <img src={NauffIle} alt="" width="25%" />
       {/* </div> */}
     </div>
   );
@@ -122,7 +125,7 @@ function Page1() {
 function Page2() {
   return (
     <div className="page">
-      <h1>Système de Vie Communautaire</h1>
+      <h1>👫Système de Vie Communautaire👫</h1>
       <br />
       <br />
       <div className="commu">
@@ -131,7 +134,6 @@ function Page2() {
           la valeur des biens.
         </h3>
         <br />
-        <img src={NauffIle} alt="" width="25%" />
         <h3>
           Système de Vote: Démocratie participative avec des votes publics et
           l'objectif d'une décision unanime.
@@ -170,6 +172,7 @@ function Page3() {
             habitants
           </h4>
         </div>
+        <br />
         <div>
           <h3>
             Système Judiciaire: Travaux forcés pour les contrevenants,
